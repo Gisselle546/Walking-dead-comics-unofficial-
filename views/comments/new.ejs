@@ -1,0 +1,15 @@
+<% include ../partials/header %>
+<div class="container">
+<h2 class="text-center">Add new Comment to <%=Comic.title %> </h2>
+
+<div class=style>
+    <form action="/comic/<%=Comic._id%>/comments" method="POST"> 
+      <div class="form-group">
+        <input type="text" class="form-control" name=comment[text] placeholder="text" >
+      </div>
+         
+        
+      <button class="btn btn-primary btn-lg btn-block">Submit</button>
+      </form>
+ </div>
+ </div>

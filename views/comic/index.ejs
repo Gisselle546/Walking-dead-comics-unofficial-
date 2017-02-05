@@ -1,0 +1,33 @@
+<% include ../partials/header %>
+
+
+<div class = "container">
+   
+   
+    <div class = "modifier"></div>
+    <div class ="row">
+            <div id="comicrow">
+             <% foundComics.forEach(function(comics){ %>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="<%= comics.image %>">
+                        <div class="caption">
+                            <h4 class="text-center"> <%=comics.title%> </h4>
+                        </div>
+                    <p class="text-center">
+                        <a href="/comic/<%=comics._id %>"class="btn btn-primary">More Info</a>
+                    </p>
+                    
+                    </div>
+                </div>
+            <% }); %>
+             </div>
+        
+        </div>
+    
+
+    </div>
+</div>
+
+
+

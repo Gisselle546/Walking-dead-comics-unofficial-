@@ -1,0 +1,119 @@
+.modifier{
+    margin-bottom: 20px;
+}
+
+.navbar{
+    margin: 0 auto;
+    border:0px;
+}
+.navbar-default{
+    background-color: #6D8A74;
+}
+
+.navbar-default .navbar-brand{
+    color:white;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color:white;
+}
+
+
+carousel-inner > .item > img {
+    height:707px;
+    width:1200px;
+}
+
+   #landing{
+       background:url("https://images7.alphacoders.com/607/607529.jpg");
+       background-size:cover;
+       height:100%;
+       
+   }
+
+    #buttonNew{
+        float:right;
+       margin-right:29%;
+       margin-top:40%;
+       
+    }
+ 
+
+
+#comicrow{
+    display: flex;   
+    flex-wrap: wrap;
+}
+
+#showcics{
+    margin-left:110px;
+}
+
+.showcics > h3 {
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#thirdRow hr{
+      border: 1px solid #9AD8ED;
+      margin-top: 50px;
+    
+}
+
+
+.secondrow{
+    margin-top:100px;
+}
+.secondRow .col-md-12 > hr {
+    border: 1px solid #9AD8ED;
+    
+ 
+}
+
+.firstWell >.well{
+    margin-left:50px;
+    margin-top:10px;
+    height:250px;
+    width:250px;
+}
+
+ #similarproducts{   
+    padding-bottom: 20px;
+}
+
+.span{
+    padding-right:3px; 
+    padding-top: 3px; 
+    display:inline-block;
+}
+
+#comicbookstorelocator{
+    margin: 20px auto;
+}
+
+
+#walkingdeadAmazonLink {
+    background-image:url(http://www.freeiconspng.com/uploads/amazon-icon-2.png);
+    display:inline-block;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position:144px 6px;
+    
+    
+}
+
+
+#registerForm{
+    width:600px;
+    margin: 20px auto;
+}
+
+#loginForm{
+    width:600px;
+    margin: 20px auto;
+}
+
+#deleteForm{
+    display:inline;
+}
+

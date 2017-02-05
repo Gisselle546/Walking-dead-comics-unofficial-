@@ -1,0 +1,131 @@
+<% include ../partials/header %>
+
+                    <div class="container">
+                        
+                        <div class = "modifier"></div>
+                        
+                        <div class ="row">
+                           
+                           <div class = "col-md-3">
+                             <img class="img-responsive" src=" <%=showcomics.image%>">
+                           </div>
+                            <div class= "col-md-5">
+                                <div class="showcics">
+                                <h3><%=showcomics.title%></h3>
+                                <hr>
+                                <p><%=showcomics.description%></p>
+                                </div>
+                            </div>
+                          
+                          <div class ="col-md-4">
+                              <div class="firstWell">
+                              <div class = "well">
+                                  
+                                  <a href="http://comicshoplocator.com/Home/1/1/57/575" id="comicbookstorelocator" role="button"class="btn btn-primary btn-block">ComicBook Store Locator</a>
+                                  <a href="<%=showcomics.amazonlink%>" id="walkingdeadAmazonLink" role= "button" class="btn btn-primary btn-block">Buy now at<div class"i"></div> </a>
+                                  
+                              </div>
+                            </div>
+                         
+                          </div>
+                        </div>
+                        
+                        <div class = "row">
+                          <div class = secondRow>
+                              <div class = "col-md-12">
+                                 <hr> 
+                                 <div id="similarproducts">
+                                 <h3>Similar Products</h3>
+                                </div>
+                         
+                         <div id="myCarousel2" class="carousel slide">
+                
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-3"><a href="https://www.amazon.com/Faster-Than-Light-Brian-Haberlin/dp/1632158833/ref=sr_1_3?ie=UTF8&qid=1483040921&sr=8-3&keywords=faster+than+light"><img src="https://imagecomics.com/uploads/releases/_small/FasterThanLight_Vol2-1.png/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="https://www.amazon.com/Nailbiter-26-Joshua-Williamson-ebook/dp/B01LWISJY7/ref=sr_1_1?ie=UTF8&qid=1483041020&sr=8-1&keywords=nailbiter+26"><img src="https://imagecomics.com/uploads/releases/_main/Nailbiter_26-1.png/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="https://www.amazon.com/Edens-Fall-3-Matt-Hawkins-ebook/dp/B01J6ETPLA/ref=sr_1_2?ie=UTF8&qid=1483041127&sr=8-2&keywords=edens+fall+3"><img src="https://imagecomics.com/uploads/releases/_small/EdensFall_03-1.png/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="https://www.amazon.com/Wicked-Divine-23-Kieron-Gillen-ebook/dp/B01LZS2OG3/ref=sr_1_1?ie=UTF8&qid=1483041190&sr=8-1&keywords=the+wicked+and+the+divine+23"><img src="https://imagecomics.com/uploads/releases/_small/TheWickedandtheDivine_23-1.png/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                         <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3"><a href="https://www.amazon.com/Revival-44-Tim-Seeley-ebook/dp/B01LY5EAZP/ref=sr_1_1?ie=UTF8&qid=1483041218&sr=8-1&keywords=revival+44"><img src="https://imagecomics.com/uploads/releases/_small/Revival_44-1.png/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="https://www.amazon.com/Mayday-1-Alex-Campi-ebook/dp/B01LXTOQ6V/ref=sr_1_2?ie=UTF8&qid=1483041237&sr=8-2&keywords=mayday+1"><img src="https://imagecomics.com/uploads/releases/_small/Mayday_01-1.png/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="https://www.amazon.com/Outcast-Kirkman-Azaceta-Book-One/dp/1534300910/ref=sr_1_7?ie=UTF8&qid=1483041287&sr=8-7&keywords=outcast"><img src="https://imagecomics.com/uploads/releases/_small/OutcastBook1HC_DONOTRELEASE-1.png/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="https://www.amazon.com/Prophet-Earth-War-Brandon-Graham-ebook/dp/B01DJOSEI8/ref=sr_1_2?ie=UTF8&qid=1483041338&sr=8-2&keywords=prophet+earth+war"><img src="https://imagecomics.com/uploads/releases/_small/ProphetEW_06-1.png/250x250" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                      </div>  
+                         
+                   </div>
+                <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel2" data-slide="prev"></a>
+
+                <a class="right carousel-control" href="#myCarousel2" data-slide="next">›</a>
+            </div>      
+            </div>         
+                         
+                         
+                         
+                         
+                         
+                              
+                          </div>  
+                        </div>
+                    
+                    <div class ="row">
+                        <div id=thirdRow>
+                            <div class= "col-md-12">
+                             <hr>   
+                            <h3>Comments</h3>
+                                 <div class="well">
+                                      <div class="text-right">
+                                          <a class="btn btn-success" href ="/comic/<%=showcomics._id%>/comments/new">Add a comment</a>
+                                      </div>   
+                                 <% showcomics.comments.forEach(function(comment){ %>
+                                     <strong><%=comment.author.username%></strong>
+                                     <p>
+                                         <%=comment.text%>
+                                     </p>
+                                
+                                <% if(currentUser && comment.author.id.equals(currentUser._id)){%>
+                                    <a class ="btn btn-xs btn-warning" href="/comic/<%=showcomics._id%>/comments/<%=comment._id%>/edit">Edit</a>
+                                
+                               <form id="deleteForm"action ="/comic/<%=showcomics._id%>/comments/<%=comment._id%>?_method=DELETE" method="POST">
+                                   
+                                   <input type = "submit" class ="btn btn-xs btn-danger" value = Delete>
+                               </form>
+                               <% } %>
+                               
+                               
+                                <% })  %>       
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </div>
+                           </div>
+                           
+                        </div>
+                    </div>    
+                    
+                    
+                    
+            </div>       
+    </div>
+                    
+                  
+<% include ../partials/footer %>
